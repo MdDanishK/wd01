@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #container{
+            background-color: bisque;
+            border-style: groove;
+            border-color: gray;
+            border-radius: 8px;
+            padding: 5px 20px 15px 20px;
+
+        }
+        body{
+            margin: 15px 30px;
+            font-size: 16px;
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea{
+            width: 80%;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px #f17006;
+        }
+        input[type="submit"]{
+            padding: 12px 20px;
+            border: none;
+            width: 100%;
+            border-radius: 17px;
+            background-color: black;
+            color: white;
+        }
+        input[type="submit"]:hover{
+            background-color: white;
+            color: black;
+        }
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-style: groove;
+            padding: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="form">
+            <center>
+                <form id="data">
+                    <h1>Registration form</h1>
+                    <p>Name: <input type="text" id="name" placeholder="username"></p>
+                    <p>Email: <input type="email" id="email" placeholder="valid email"></p>
+                    <p>Password: <input type="password" id="password" placeholder="password"></p>
+                    <p>Date of birth: <input type="date" id="dob" ></p>
+                    <p>Accept terms and condition <input type="checkbox" id="tc"></p>
+                    <input type="submit" value="submit">
+                </form>
+            </center>
+        </div>
+        <center>
+            <h1>Entries</h1>
+            <table id="usertbl">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Dob</th>
+                    <th>Terms & condition</th>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <script src="index.js">
+    </script>
+</body>
+</html>
